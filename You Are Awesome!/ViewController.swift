@@ -11,18 +11,15 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
     @IBAction func showMessagePressed(_ sender: UIButton) {
         messageLabel.text = "You Are Awesome!"
-        messageLabel.textColor = UIColor.blue
-    }
-    
-    @IBAction func showAnotherMessagePressed(_ sender: UIButton) {
-        messageLabel.text = "You Are Great!"
-        messageLabel.textColor = .systemRed
+        imageView.image = UIImage(named: "image0")
     }
 }
 
