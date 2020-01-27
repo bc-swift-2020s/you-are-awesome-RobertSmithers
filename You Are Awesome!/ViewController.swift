@@ -64,7 +64,6 @@ class ViewController: UIViewController {
         
         soundNumber = nonRepeatingRandom(originalNumber: soundNumber, upperLimit: totalNumberOfSounds-1)
         playSound(name: "sound\(soundNumber)")
-        
 //        messageLabel.text = messages[messageNumber]
 //        messageNumber += 1
 //        if messageNumber == messages.count {
